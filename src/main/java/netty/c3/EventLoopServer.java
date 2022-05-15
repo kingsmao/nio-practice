@@ -18,7 +18,6 @@ public class EventLoopServer {
     public static void main(String[] args) {
         //细分2：创建独立的EventLoopGroup
         DefaultEventLoopGroup group = new DefaultEventLoopGroup();
-
         new ServerBootstrap()
                 //boss和worker
                 //细分1：使用两个参数时，第一个是boss，只负责ServerSocketChannel上的accept事件，第二个是worker，只负责socketChannel上的读写
